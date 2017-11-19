@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Test Extension",
+    "version": "1.0.0",
+    "permissions": [ "tabs", "activeTab" ],
+    "background": {
+      "page": "index.html#/event-page",
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "browser_action": {
+      "default_title": "Open Popup!",
+      "default_popup": "index.html#/popup"
+    },
+    "icons": {
+      "19": "assets/Icon-19.png",
+      "38": "assets/Icon-38.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
