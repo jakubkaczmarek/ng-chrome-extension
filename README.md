@@ -7,6 +7,6 @@ Project was developed using Angular CLI and it's recommended to install it to ru
 # Build
 To build the project you need to run the following node commands:
 
-* npm install
-* gulp
+* `npm install`
+* `gulp`
 
