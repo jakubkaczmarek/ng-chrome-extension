@@ -16,7 +16,7 @@ gulp.task('ng-build', function(cb) {
         return true;
     });
 });
-gulp.task('content-script', function() {
+gulp.task('content-script', ['ng-build'], function() {
     return browserify({
             basedir: '.',
             debug: true,
